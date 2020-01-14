@@ -1,0 +1,66 @@
+{
+  "name": "iqs-bindles-infrastructure-node",
+  "version": "1.0.0",
+  "author": "Conceptual Vision Consulting LLC",
+  "description": "Client sites facade for iQuipsys Positron",
+  "contributors": [
+    "Sergey Seroukhov <seroukhov@gmail.com>"
+  ],
+  "main": "./obj/src/index.js",
+  "typings": "./obj/src/index.d.ts",
+  "keywords": [
+    "pip.services",
+    "infrastructure",
+    "microservice"
+  ],
+  "noAnalyze": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:iquipsys-positron/iqs-bindles-infrastructure-node.git"
+  },
+  "license": "SEE LICENSE IN LICENCE.md",
+  "engines": {
+    "node": ">=0.6.14"
+  },
+  "private": false,
+  "scripts": {
+    "start": "node app",
+    "test": "mocha -t 10000 -R spec -u tdd --recursive ./obj/test",
+    "benchmark": "matcha -R clean -I tdd ./benchmark/run.js"
+  },
+  "dependencies": {
+    "pip-services3-commons-node": "^3.0.0",
+    "pip-services3-components-node": "^3.0.0",
+    "pip-services3-container-node": "^3.0.0",
+    "pip-services3-data-node": "^3.0.0",
+    "pip-services3-aws-node": "^3.0.0",
+    "pip-services3-rpc-node": "^3.0.0",
+    "pip-services3-mongodb-node": "^3.0.0",
+    "pip-services3-facade-node": "^3.0.0",
+    "pip-clients-statistics-node": "^1.0.0",
+    "pip-clients-eventlog-node": "^1.0.0",
+    "pip-clients-blobs-node": "^1.0.0",
+    "pip-clients-sms-node": "^1.0.0",
+    "pip-clients-email-node": "^1.0.0",
+    "pip-clients-settings-node": "^1.0.0",
+    "pip-clients-logging-node": "^1.0.0",
+    "pip-clients-perfmon-node": "^1.0.0",
+    "pip-services-statistics-node": "1.0.0",
+    "pip-services-eventlog-node": "1.0.0",
+    "pip-services-blobs-node": "^1.0.0",
+    "pip-services-changescopes-node": "^1.0.0",
+    "pip-services-sms-node": "^1.0.0",
+    "pip-services-email-node": "^1.0.0",
+    "pip-services-settings-node": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "@types/lodash": "^4.0.0",
+    "@types/async": "^2.0.0",
+    "@types/mocha": "*",
+    "@types/chai": "*",
+    "mocha": "*",
+    "chai": "*",
+    "restify": "^4.3.4"
+  }
+}

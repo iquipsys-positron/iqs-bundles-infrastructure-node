@@ -1,0 +1,6 @@
+{
+    "name": "iqs-bindles-infrastructure-node",
+    "registry": "registry.gitlab.com/iqs-bindles",
+    "version": "1.0.0",
+    "build": "3"
+}
